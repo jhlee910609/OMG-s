@@ -11,7 +11,7 @@ import com.junheelee.omgs.home.HomeViewModel
  */
 class ViewModelFactory private constructor(
         private val app: Application
-) : ViewModelProvider.NewInstanceFactory() {
+) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>) =
             with(modelClass) {

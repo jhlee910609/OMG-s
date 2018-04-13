@@ -34,6 +34,7 @@ ext{
     rxJavaVersion = '2.1.10'
     ktxVersion = '0.3'
     anko_version='0.10.4'
+    archLifecycleVersion = "1.1.1"
 }
 
 dependencies {
@@ -73,4 +74,9 @@ dependencies {
 
     // 7. Anko
     compile "org.jetbrains.anko:anko-commons:$anko_version"
+
+    // 8. Android Architecture Component
+    compile "android.arch.lifecycle:extensions:$archLifecycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$archLifecycleVersion"
+
 }
